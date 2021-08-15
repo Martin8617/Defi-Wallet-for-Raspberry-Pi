@@ -36,7 +36,7 @@ The Defi Wallet will initiate and guide you. Further information is available at
 
 ### Buy Hardware and setup a Raspberry Pi
 
-On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for the hardware of a Raspberry Pi node as well as a 3D case with DeFiChain logo. A good installation guide of the setup of a Raspberry Pi you can find there as well.
+On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for the hardware of a Raspberry Pi node as well as a 3D case with DeFiChain logo. A good installation guide of the setup of a Raspberry Pi you can find there as well, however don't mix up this Defi Wallet with the docker installation at DefiNode.
 
 ### Run your own Masternode
 
