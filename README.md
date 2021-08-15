@@ -21,7 +21,7 @@ Use DeFi Wallet to interact with DeFiChain. It is a wallet for \$DFI, wrapped BT
 
 ## Howto Start
 
-You can [download the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi,
+You can [download here the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi,
 
 or
 
