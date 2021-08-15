@@ -25,7 +25,7 @@ You can [download the desktop app](https://github.com/Martin8617/Defi-Wallet-for
 
 or
 
-You can [check releases](https://github.com/DeFiCh/app/releases) for latest downloadable installers for Windows, Mac and Linux.
+You can check for official DeFiChain [releases](https://github.com/DeFiCh/app/releases) for latest downloadable installers for Windows, Mac and Linux.
 
 After download the AppImage, save the file where you want (e.g. /home/user/desktop/), mark the file as executable (right-klick the icon, choose preferences) and run the AppImage - that's all...
 
