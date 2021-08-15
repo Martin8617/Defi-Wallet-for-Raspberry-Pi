@@ -40,7 +40,7 @@ On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for
 
 ### Run your own Masternode
 
-The [DefiChain-Wiki](https://defichain-wiki.com/wiki/Masternode_installation_extended) tells you the [mydeficha.in](https://mydeficha.in) will serves you with operating your own masternode. 
+The [DefiChain-Wiki](https://defichain-wiki.com/wiki/Masternode_installation_extended) tells you the steps to setup a masternode and the guys from [mydeficha.in](https://mydeficha.in) will serves you with operating your own masternode. 
 
 
 ## Disclaimer & Licenses
