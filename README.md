@@ -1,16 +1,16 @@
-# Defi-Wallet-for-Raspberry-Pi
+# Defi Wallet for Raspberry Pi
 
+The official DeFiChain AppImage release of the Defi Wallet for linux will not work for the Raspberrys. So I have made for myself a compiled version of the Defi Wallet for my Raspberry Pi 4B 4GB with official Raspberry Pi OS (32-Bit). This so called `armv7l` version is different to other linux distributions as well as different to the Raspberry Pi 64-Bit version (arm8). 
 
-Ich habe für mich eine selber compilierte AppImage für armv7l, Raspi OS (32-bit), am Laufen.
-Gerne stelle ich diese hier zur Verfügung und würde auch kommende updates pflegen.
-Ich sehe die AppImage als Alternative zur selbstcompilierten Docker-Version.
+The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. No code was modyfied and was 100% taken from the DeFiChain repository.
 
 
 ## Documentation
 
 - [DeFi Wallet App](#DeFi-Wallet-App)
-- [Getting started](#getting-started)
 - [DeFiChain.com](https://defichain.com/)
+- [Getting started](#getting-started)
+- [DefiNode](#DefiNode)
 
 
 ## DeFi Wallet App
@@ -30,6 +30,11 @@ You can [check releases](https://github.com/DeFiCh/app/releases) for latest down
 After download the AppImage, save the file where you want (e.g. /home/user/desktop/), mark the file as executable (right-klick the icon, choose preferences) and run the AppImage - that's all...
 
 The Defi Wallet will initiate and guide you. Further information is available at the [DeFiChain-Wiki](https://defichain-wiki.com/wiki/DeFi_Wallet).
+
+
+## DefiNode
+
+On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for a Raspberry Pi node as well as a 3D case with DeFiChain logo.
 
 
 ## Licenses & Disclaimer
