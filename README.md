@@ -43,11 +43,7 @@ On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for
 The [DefiChain-Wiki](https://defichain-wiki.com/wiki/Masternode_installation_extended) tells you the steps to setup a masternode and the guys from [mydeficha.in](https://mydeficha.in) will serves you with operating your own masternode. 
 
 
-## Disclaimer & Licenses
-
-The information provided by Martin8617is for general informational purposes only. All information on the sites and channels is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site or our channels.
-
-UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THIS SITE, CHANNELS, SCRIPTS, TUTORIALS OR SOFTWARE. YOUR USE OF THE SITE, SCRIPTS, TUTORIALS OR SOFTWARE AND YOUR RELIANCE ON ANY INFORMATION ON THIS SITE AND CHANNELS IS SOLELY AT YOUR OWN RISK.
+## Licenses
 
 By using `Defi-Wallet for Raspberry Pi` (this repo), you (the user) agree to be bound by [the terms of this license](LICENSE).
 
