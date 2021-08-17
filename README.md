@@ -11,7 +11,7 @@ The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. 
 - [DeFiCh/app](https://github.com/DeFiCh/app/README.md)
 - [Nodejs debinstall](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 - [How to build Electron Apps for Raspberry Pi (a 2nd way)](https://www.beekeeperstudio.io/blog/electron-apps-for-arm-and-raspberry-pi)
-- [Build from Scratch](https://github.com/Martin8617/HowTo/blob/main/build-app.md)
+- [Build from Scratch](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/blob/main/build-app.md)
 
 
 ## DeFi Wallet App
