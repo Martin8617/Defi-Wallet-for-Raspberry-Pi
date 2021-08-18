@@ -1,8 +1,8 @@
 #!/bin/sh
 #!/usr/bin/env fish
 ainVersion=$1
-url="https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/releases/download/v${ainVersion}/defichain-${ainVersion}-armv7l-raspi.tar.gz"
-outfile="defichain-${ainVersion}-armv7l-raspi.tar.gz";
+url="https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/releases/download/v${ainVersion}/defichain-${ainVersion}-armv7l-raspi.tar.xz"
+outfile="defichain-${ainVersion}-armv7l-raspi.tar.xz";
 mkdir -p binary
 cd binary && rm -rf win mac linux
 mkdir linux
