@@ -1,5 +1,6 @@
 # Build DeFi Wallet on Raspberry Pi 4B with Raspberry OS 32-Bit or 64-Bit
 
+
 ## Documentation
 - DefiCh/app (https://github.com/DeFiCh/app)
 - Nodejs (https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
@@ -9,10 +10,10 @@
 
 ## Source Code
 Download source code and extract them to your /home/user/ directory:
-- app-2.6.1 (https://github.com/DeFiCh/app/releases)
+- app-2.6.2 (https://github.com/DeFiCh/app/releases)
 
 
-## Build app-2.6.1
+## Build app-2.6.2
 
 ### Install dependencies for node
 Once installed, the node, npm and yarn commands are available for use and will remain updated for the channel you selected.
@@ -34,7 +35,7 @@ sudo apt-get install yarn
 
 ### Setup the required binary
 - Copy the files `pre-build-armv7l.sh` and/or `pre-build-arm64.sh` to your /home/user/ directory
-- In `/home/pi/app-2.6.1/package.json` add the lines for running the script:
+- In `/home/pi/app-2.6.2/package.json` add the lines for running the script:
 ```
   "pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
   "pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
@@ -46,7 +47,7 @@ Note: The files `pre-build-armv7l.sh` and `pre-build-arm64.sh` will download the
 
 ### To build the app using arm platform
 ```
-cd /home/pi/app-2.6.1
+cd /home/pi/app-2.6.2
 npm run init
 ```
 
