@@ -8,7 +8,7 @@ The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. 
 ## Documentation
 
 - [DeFiChain.com](https://defichain.com/)
-- [DeFiCh/app](https://github.com/DeFiCh/app/README.md)
+- [DeFiCh/app](https://github.com/DeFiCh/app)
 - [Nodejs debinstall](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 - [How to build Electron Apps for Raspberry Pi (a 2nd way)](https://www.beekeeperstudio.io/blog/electron-apps-for-arm-and-raspberry-pi)
 - [Build from Scratch](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/blob/main/build-app.md)
@@ -18,15 +18,20 @@ The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. 
 
 Use DeFi Wallet to interact with DeFiChain. It is a wallet for \$DFI, wrapped BTC, ETH, USDT. Liquidity mine, use the DEX, create masternodes, and more.
 ![Image](https://defichain.com/img/app/liquidity@2x.png)
+There are actually 3 different ways to set up a Defi Wallet (Desktop App including DeFi Node), however don't mix up! You have to decide for one of the different ways. Because you are here, I guess you have decided to use my AppImage😉:
+- Setup the Raspberry Pi with the offical [Raspberry Pi OS](https://www.raspberrypi.org/software/). Next you have to install the Defi Wallet on your Raspberry Pi:
+  1) Using AppImage from [here](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) (from this page). 
+  2) Using Docker Script from [DefiNode](https://github.com/DefiNode/DeFiNode/blob/main/README.md#download-script-and-execution). Follow the steps as descripted and build your own Defi Wallet.
+  
+- Setup the Raspberry Pi with the DeFi-Node-Raspi-Image:
+  
+  3) Using Raspberry Pi Image provided on [Google Drive](https://drive.google.com/drive/folders/1yGWeP8gqt5JNypeeJTZ-0aqh-k04m7Jj?usp=sharing) with the [RaspberryPI Imager](https://www.raspberrypi.org/software/). 
 
 
 ## Howto Start
 
-You can [download here the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi,
-
-or
-
-You can check for official DeFiChain [releases](https://github.com/DeFiCh/app/releases) for latest downloadable installers for Windows, Mac and Linux.
+- You can [download here the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi.
+- You can check for official DeFiChain [releases](https://github.com/DeFiCh/app/releases) for latest downloadable installers for Windows, Mac and Linux, however they have no release for the Raspberry - that's why you are here.
 
 After download the AppImage, save the file where you want (e.g. /home/user/desktop/), mark the file as executable (right-klick the icon, choose preferences) and run the AppImage - that's all...
 
@@ -35,9 +40,9 @@ The Defi Wallet will initiate and guide you. Further information is available at
 
 ## Howto Continue
 
-### Buy Hardware and setup a Raspberry Pi
+### Buy Hardware
 
-On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for the hardware of a Raspberry Pi node as well as a 3D case with DeFiChain logo. A good installation guide of the setup of a Raspberry Pi you can find there as well, however don't mix up this Defi Wallet with the docker installation at DefiNode.
+On [DefiNode](https://github.com/DefiNode/DeFiNode) you find a shopping list for the hardware of a Raspberry Pi node as well as a 3D case with DeFiChain logo. A good installation guide of the setup of a Raspberry Pi you can find there as well.
 
 ### Run your own Masternode
 
