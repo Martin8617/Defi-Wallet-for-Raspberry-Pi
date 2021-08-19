@@ -20,12 +20,12 @@ Use DeFi Wallet to interact with DeFiChain. It is a wallet for \$DFI, wrapped BT
 ![Image](https://defichain.com/img/app/liquidity@2x.png)
 There are actually 3 different ways to set up a Defi Wallet (Desktop App including DeFi Node), however don't mix up! You have to decide for one of the different ways. Because you are here, I guess you have decided to use my AppImage😉:
 - Setup the Raspberry Pi with the offical [Raspberry Pi OS](https://www.raspberrypi.org/software/). Next you have to install the Defi Wallet on your Raspberry Pi:
-  1) Using AppImage from [here](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) (from this page). 
-  2) Using Docker Script from [DefiNode](https://github.com/DefiNode/DeFiNode/blob/main/README.md#download-script-and-execution). Follow the steps as descripted and build your own Defi Wallet.
+  1) Using the AppImage from [here](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) (from this page). 
+  2) Using the Script from [DefiNode](https://github.com/DefiNode/DeFiNode/blob/main/README.md#download-script-and-execution). Follow the steps as descripted and build your own Defi Wallet.
   
 - Setup the Raspberry Pi with the DeFi-Node-Raspi-Image:
   
-  3) Using Raspberry Pi Image provided on [Google Drive](https://drive.google.com/drive/folders/1yGWeP8gqt5JNypeeJTZ-0aqh-k04m7Jj?usp=sharing) with the [RaspberryPI Imager](https://www.raspberrypi.org/software/). 
+  3) Using the Raspberry Pi Image provided on [Google Drive](https://drive.google.com/drive/folders/1yGWeP8gqt5JNypeeJTZ-0aqh-k04m7Jj?usp=sharing) with the [RaspberryPI Imager](https://www.raspberrypi.org/software/). 
 
 
 ## Howto Start
