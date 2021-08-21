@@ -18,7 +18,7 @@ The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. 
 
 Use DeFi Wallet to interact with DeFiChain. It is a wallet for \$DFI, wrapped BTC, ETH, USDT. Liquidity mine, use the DEX, create masternodes, and more.
 ![Image](https://defichain.com/img/app/liquidity@2x.png)
-There are actually 3 different ways to set up a Defi Wallet (Desktop App including DeFi Node), however don't mix up! You have to decide for one of the different ways. Because you are here, I guess you have decided to use my AppImage😉:
+There are actually 3 different ways `(i./ii./iii.)` to set up a Defi Wallet (Desktop App including DeFi Node), however don't mix up! You have to decide for one of the different ways. Because you are here, I guess you have decided to use my AppImage😉:
 - Setup the Raspberry Pi with the offical [Raspberry Pi OS](https://www.raspberrypi.org/software/). Next you have to install the Defi Wallet on your Raspberry Pi:
   1) Using the AppImage from [here](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) (from this page). 
   2) Using the Script from [DefiNode](https://github.com/DefiNode/DeFiNode/blob/main/README.md#download-script-and-execution). Follow the steps as descripted and build your own Defi Wallet.
