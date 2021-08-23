@@ -14,5 +14,6 @@ Please follow [Build from Srcatch](https://github.com/Martin8617/Defi-Wallet-for
    "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
    
    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
-   
+ 
+ 4) Replace package.json into~/app-2.6.1/ (or any further version)
    
