@@ -18,29 +18,23 @@ Download source code and extract them to your `/home/user/` directory:
 ## Build app-2.6.2
 
 ### Install dependencies for node
-Once installed, the node, npm and yarn commands are available for use and will remain updated for the channel you selected.
+Once installed, the node and npm commands are available for use and will remain updated for the channel you selected:
 ```
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y nodejs
+```
+Check if dependencies are installed as requested by nodejs installation:
+```
 sudo apt-get install gcc g++ make
 ```
-You need `node v14`, and `npm v7` for this project, it's required to set up the npm workspaces. So you have to upgrade npm.
-```shell
-sudo npm -g install npm@7.21.0
+You need `node v15`, and `npm v7` for this project, it's required to set up the npm workspaces. So you have to upgrade npm:
+```
+sudo npm -g install npm@7.21.1
 ```
 
-### Install dependencies for yarn (if needed)
-````
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update
-sudo apt-get install yarn
-````
-
-
 ### Setup the required binary
-Copy respective replace the [files](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/tree/main/files) into `home/pi/app-2.6.2`(or further versions):
+Copy respective replace the [files](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/tree/main/files) into `home/pi/app-2.6.2`:
 ```
 pre-build-armv7l.sh
 pre-build-arm64.sh
