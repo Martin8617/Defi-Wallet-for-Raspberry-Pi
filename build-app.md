@@ -40,7 +40,7 @@ pre-build-armv7l.sh
 pre-build-arm64.sh
 package.json
 ```
-Note: The files `pre-build-armv7l.sh` and `pre-build-arm64.sh` will download my Defi Node from this homepage and copy it into your app directory. If you use your own build Defi Node you have to replace the download link in the files with your directory.
+> **NOTE**: The files `pre-build-armv7l.sh` and `pre-build-arm64.sh` will download my Defi Node from this homepage and copy it into your app directory. If you use your own build Defi Node you have to replace the download link in the files with your directory.
 
 
 ### To build the app using arm platform
@@ -48,7 +48,7 @@ Note: The files `pre-build-armv7l.sh` and `pre-build-arm64.sh` will download my 
 cd /home/pi/app-2.6.2
 npm run init
 ```
-Note: A few warnings occures, however the app works. The Raspberry OS 32-Bit works fine, the 64-Bit version too - even with more warnings...
+> **NOTE**: A few warnings occures, however the app works. The Raspberry OS 32-Bit works fine, the 64-Bit version too - even with more warnings...
 
 
 ### Build app
