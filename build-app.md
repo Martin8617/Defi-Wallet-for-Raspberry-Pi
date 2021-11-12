@@ -18,9 +18,10 @@ Download the latest source code from DefiCh/app and extract them to your `/home/
 ## Build app-2.x.x
 
 ### Install dependencies for node
+Newest stable Nodejs is v16 and npm is v8, however the app is configured with version mention below. So I use the needed version instead the newest. 
 Once installed, the node and npm commands are available for use and will remain updated for the channel you selected:
 ```
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y nodejs
 ```
@@ -28,7 +29,7 @@ Check if dependencies are installed as requested by nodejs installation:
 ```
 sudo apt-get install gcc g++ make
 ```
-You need `node v16`, and `npm v7` for this project, it's required to set up the npm workspaces. So you have to upgrade npm:
+You need `node v15`, and `npm v7` for this project, it's required to set up the npm workspaces. So you have to upgrade npm:
 ```
 sudo npm install -g npm@7
 ```
