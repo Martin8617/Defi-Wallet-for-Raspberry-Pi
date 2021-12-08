@@ -8,7 +8,7 @@
     "email": "engineering@defichain.com",
     "url": "https://defichain.com/"
   },
-  "homepage": "https://github.com/DeFiCh/app",
+  "homepage": "https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi",
   "publicPath": "./",
   "config": {
     "ainVersion": "2.3.0"
@@ -28,6 +28,10 @@
     "pre:build:linux": "sh pre-build-linux.sh $npm_package_config_ainVersion",
     "pre:build:mac": "sh pre-build-mac.sh $npm_package_config_ainVersion",
     "pre:build:win": "pre-build-win.cmd %npm_package_config_ainVersion%",
+    "pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
+    "pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
+    "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
+    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
     "build:electron": "npm run build:react && npm run transpile:prod && npm run set_env:prod",
     "build": "npm run build:electron && electron-builder",
     "build:all": "npm run build:electron && electron-builder -mwl",
