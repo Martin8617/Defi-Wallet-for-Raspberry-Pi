@@ -3,8 +3,8 @@
 ainVersion=$1
 url="https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/releases/download/v${ainVersion}/defichain-${ainVersion}-arm64-raspi.tar.xz"
 outfile="defichain-${ainVersion}-arm64-raspi.tar.xz";
-mkdir -p binary
-cd binary && rm -rf win mac linux
+mkdir -p bin
+cd bin && rm -rf win mac linux
 mkdir linux
 cd ..
 mkdir -p temp
@@ -13,6 +13,6 @@ mkdir linux && cd linux
 wget "${url}"
 tar -xvf "${outfile}"
 cp "defichain-${ainVersion}/bin/defid" .
-cd ../.. && cp temp/linux/defid binary/linux/defid
+cd ../.. && cp temp/linux/defid bin/linux/defid
 rm -rf temp/
-chmod 777 binary/linux/defid
+chmod 777 bin/linux/defid
