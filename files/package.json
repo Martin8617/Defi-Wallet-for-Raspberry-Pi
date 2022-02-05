@@ -1,6 +1,6 @@
 {
   "name": "defi-wallet",
-  "version": "2.8.4",
+  "version": "2.9.1",
   "description": "DeFi Wallet",
   "main": "./electron-app/build/electron-app/index.js",
   "author": {
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/DeFiCh/app",
   "publicPath": "./",
   "config": {
-    "ainVersion": "2.5.0"
+    "ainVersion": "2.6.1"
   },
   "scripts": {
     "init": "npm ci && cd webapp && npm run init",
@@ -22,17 +22,17 @@
     "start:dev": "concurrently -p \"[{time} - {name}]\" -n \"ReactApp,Electron\" -c \"bgMagenta.black.bold,bgCyan.black.bold\" -t \"hh:mm:ss a\" \"npm run start:react\" \"npm run start:electron\"",
     "start:react": "cd webapp && npm run start:dev",
     "start:electron": "node ./scripts/electron",
-    "start:electron-url": "export ELECTRON_START_URL=http://localhost:5000 && electron --inspect .",
+    "start:electron-url": "export ELECTRON_START_URL=http://localhost:5001 && electron --inspect .",
     "electron": "npm run transpile && cross-env NODE_ENV=development electron --inspect . -d true",
     "build:react": "cd webapp && npm run build:react",
     "prebuild": "node ./scripts/prebuild",
     "pre:build:linux": "node ./scripts/prebuild linux",
     "pre:build:mac": "node ./scripts/prebuild mac",
     "pre:build:win": "node ./scripts/prebuild win",
-	"pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
-	"pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
-	"build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
-	"build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
+    "pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
+    "pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
+    "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
+    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
     "build:electron": "npm run build:react && npm run transpile:prod && npm run set_env:prod",
     "build": "npm run build:electron && electron-builder",
     "build:all": "npm run build:electron && electron-builder -mwl",
