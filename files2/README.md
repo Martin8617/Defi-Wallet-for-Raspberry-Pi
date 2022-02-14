@@ -1,3 +1,6 @@
+# Under Construction
+...changing procedure building the app...
+
 ### To do while building the app
 
 Please follow [Build from Srcatch](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/blob/main/build-app.md) step by step.
@@ -5,7 +8,7 @@ Please follow [Build from Srcatch](https://github.com/Martin8617/Defi-Wallet-for
 
 1) Copy _`prebuildarm.js`_ into `~/app-2.x.x/scripts/`
 
-2) Check if _`package.json`_ contains the right ain and app version. If yes, replace the package.json in `~/app-2.x.x/package.json` 
+2) Check if _`package.json`_ contains the right ain and app version. If yes, replace the package.json in your `~/app-2.x.x/package.json` 
 3) If not, copy the 4 line into your _`package.json`_:
 
    ```
