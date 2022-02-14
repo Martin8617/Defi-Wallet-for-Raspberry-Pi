@@ -5,7 +5,7 @@ Please follow [Build from Srcatch](https://github.com/Martin8617/Defi-Wallet-for
 
 1) Copy _`prebuildarm.js`_ into `~/app-2.x.x/scripts/`
 
-2) Check if _`package.json`_ contains the right ain and app version. If yes, replace the package.json in `~/app-2.x.x/package.json` 
+2) Check if _`package.json`_ contains the right ain and app version. If yes, replace the package.json in your `~/app-2.x.x/package.json` 
 3) If not, copy the 4 line into your _`package.json`_:
 
    ```
@@ -15,7 +15,7 @@ Please follow [Build from Srcatch](https://github.com/Martin8617/Defi-Wallet-for
    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 -p never",  
    ```
    
- 4) Save modified _package.json_ in ~/app-2.x.x/package.json
+ 4) Save modified ~/app-2.x.x/package.json
    
 
 
