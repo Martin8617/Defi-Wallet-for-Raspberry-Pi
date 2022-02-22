@@ -7,6 +7,7 @@
 - Nodejs (https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 - Workspaces (https://docs.npmjs.com/cli/v7/using-npm/workspaces)
 - Electron (https://www.beekeeperstudio.io/blog/electron-apps-for-arm-and-raspberry-pi)
+- AppImage Troubleshooting (https://docs.appimage.org/user-guide/troubleshooting/index.html#ref-ug-troubleshooting)
 - Defi Node 32-bit (https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/blob/main/build-ain-armv7l.md)
 - Defi Node 64-bit (https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/blob/main/build-ain-arm64.md)
 
@@ -16,6 +17,12 @@ Download the latest source code from DefiCh/app and extract them to your `/home/
 
 
 ## Build app-2.x.x
+
+### Install dependencies for sandbox
+AppImages based on Electron require the kernel to be configured in a certain way to allow for its sandboxing to work as intended. Many distributions come with this configured out of the box, but not Raspberry OS. Specially the new Raspberry OS Bullseye does not allow to run appimages. This issue is fixed by installing:
+```
+sudo apt-get install flatpak
+```
 
 ### Install dependencies for node
 Once installed, the node and npm commands are available for use and will remain updated for the channel you selected:
@@ -49,7 +56,7 @@ Change to your app directory `cd /home/pi/app-2.x.x` and initiate the sricpt to 
 npm run init
 ```
 
-> **NOTE**: A few warnings occures, however the app works. The Raspberry OS 32-Bit works fine, the 64-Bit version too - even with more warnings...
+> **NOTE**: Warnings occures! The Raspberry OS 32-Bit works, the 64-Bit version too - when they run through... To be honest, the longer the more problems I have to compile the Defi-Wallet. Outdated node modules make me despair in the 64-bit version.
 
 
 ### Build app
