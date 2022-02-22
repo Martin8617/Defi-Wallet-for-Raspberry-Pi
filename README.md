@@ -28,7 +28,7 @@ There are actually 3 different ways `(i./ii./iii.)` to set up a Defi Wallet (Des
 
 ## Howto Start
 
-- You can [download the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi.
+- You [download the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi.
 - You can check for official DeFiChain [releases](https://github.com/DeFiCh/app/releases) for latest downloadable installers for Windows, Mac and Linux, however they have no release for the Raspberry - that's why you are here.
 
 After download the AppImage, save the file where you want (e.g. /home/user/desktop/), mark the file as executable (right-klick the icon, choose preferences) and run the AppImage - that's all..., wait one new thing you have to consider:
