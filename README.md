@@ -39,8 +39,7 @@ AppImages based on Electron require the kernel to be configured in a certain way
 sudo apt-get install flatpak
 ```
 
-
-The Defi Wallet will initiate and guide you. Further information is available at the [DeFiChain-Wiki](https://defichain-wiki.com/wiki/DeFi_Wallet).
+After doing the above, the Defi Wallet will initiate and guide you. Further information is available at the [DeFiChain-Wiki](https://defichain-wiki.com/wiki/DeFi_Wallet).
 
 
 ## Howto Continue
