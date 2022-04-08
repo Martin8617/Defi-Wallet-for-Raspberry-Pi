@@ -37,7 +37,7 @@ sudo apt-get install gcc g++ make
 ```
 You need `node v16`, and `npm v8` for this project, it's required to set up the npm workspaces. So you have to upgrade npm:
 ```
-sudo npm update -g npm
+sudo npm update npm
 ```
 
 ### Setup the required binary
