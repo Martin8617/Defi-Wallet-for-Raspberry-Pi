@@ -4,6 +4,7 @@ The official DeFiChain AppImage release of the Defi Wallet for Linux will not wo
 
 The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. No code was modyfied and was ~100% taken from the DeFiChain repository - ok, the npm workspace file package.json includes now the build for the arm-processors😏
   
+> Note: I compiled the node and wallet on my Raspberry Pi with Raspberry OS bullseye (Debian v11). I got the feedback that you therefore have to upgrade your Raspberry to the same version as mine.  
 
 ## Documentation
 
