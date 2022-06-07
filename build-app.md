@@ -7,6 +7,7 @@
 - Nodejs (https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 - Workspaces (https://docs.npmjs.com/cli/v7/using-npm/workspaces)
 - Electron (https://www.beekeeperstudio.io/blog/electron-apps-for-arm-and-raspberry-pi)
+- GNU Compiler Collection (GCC) Command Options (https://gcc.gnu.org/onlinedocs/gcc/ARM-Options.html)
 - AppImage Troubleshooting (https://docs.appimage.org/user-guide/troubleshooting/index.html#ref-ug-troubleshooting)
 - Defi Node 32-bit (https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/blob/main/build-ain-armv7l.md)
 - Defi Node 64-bit (https://github.com/Martin8617/Defi-Node-for-Raspberry-Pi/blob/main/build-ain-arm64.md)
