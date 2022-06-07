@@ -10,8 +10,8 @@ Please follow [Build from Srcatch](https://github.com/Martin8617/Defi-Wallet-for
    ```
    "pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
    "pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
-   "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
-   "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
+   "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --linux --armv7l -p never",
+   "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --linux --arm64 -p never",
    ```
  4) Save modified `package.json` in /home/pi/app-2.x.x/package.json 
    
