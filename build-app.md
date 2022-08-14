@@ -57,7 +57,7 @@ Change to your app directory `cd /home/pi/app-2.x.x` and initiate the sricpt to 
 npm run init
 ```
 
-> **NOTE**: Warnings occures! The Raspberry OS 32-Bit works, the 64-Bit version too - when they run through... To be honest, the longer the more problems I have to compile the Defi-Wallet. Outdated node modules make me despair in the 64-bit version.
+> **NOTE**: Warnings occures! The Raspberry OS 32-Bit works, the 64-Bit version too - when they run through... To be honest, the longer the more problems I have to compile the Defi-Wallet. Outdated node modules make me despair in the 64-bit version. If `npm run init` doesn't work you can use `npm run init --legacy-peer-deps` or `npm run init --force`. Anyway I recommend `npm cache clean --force` for every new run...
 
 
 ### Build app
