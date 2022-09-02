@@ -1,6 +1,6 @@
 {
   "name": "defi-wallet",
-  "version": "2.18.0",
+  "version": "2.19.0",
   "description": "DeFi Wallet",
   "main": "./electron-app/build/electron-app/index.js",
   "author": {
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi",
   "publicPath": "./",
   "config": {
-    "ainVersion": "2.9.4"
+    "ainVersion": "2.10.0"
   },
   "scripts": {
     "init": "npm ci --force && cd webapp && npm run init",
@@ -31,8 +31,8 @@
     "pre:build:win": "node ./scripts/prebuild win",
     "pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
     "pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
-    "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --linux --armv7l -p never",
-    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --linux --arm64 -p never",
+    "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
+    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
     "build:electron": "npm run build:react && npm run transpile:prod && npm run set_env:prod",
     "build": "npm run build:electron && electron-builder",
     "build:all": "npm run build:electron && electron-builder -mwl",
