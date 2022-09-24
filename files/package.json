@@ -1,6 +1,6 @@
 {
   "name": "defi-wallet",
-  "version": "2.19.0",
+  "version": "2.21.0",
   "description": "DeFi Wallet",
   "main": "./electron-app/build/electron-app/index.js",
   "author": {
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi",
   "publicPath": "./",
   "config": {
-    "ainVersion": "2.10.0"
+    "ainVersion": "2.11.1"
   },
   "scripts": {
     "init": "npm ci --force && cd webapp && npm run init",
@@ -126,19 +126,25 @@
       {
         "from": "./webapp/build/release/",
         "to": "./webapp",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       }
     ],
     "extraResources": [
       {
         "from": "./bin",
         "to": "./bin",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       {
         "from": "./DO_NOT_SAVE_WALLETS_HERE",
         "to": "../DO_NOT_SAVE_WALLETS_HERE",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       }
     ],
     "icon": "electron-app/assets/icon/icon-512.png",
@@ -160,14 +166,18 @@
     },
     "linux": {
       "icon": "electron-app/assets/icon/linux/512x512.png",
-      "target": ["AppImage"]
+      "target": [
+        "AppImage"
+      ]
     },
     "win": {
       "target": "NSIS"
     },
     "mac": {
       "category": "public.app-category.finance",
-      "target": ["dmg"],
+      "target": [
+        "dmg"
+      ],
       "type": "distribution",
       "hardenedRuntime": true,
       "entitlements": "electron-app/assets/entitlements.mac.plist",
