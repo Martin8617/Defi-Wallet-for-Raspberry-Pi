@@ -17,7 +17,7 @@ Download the latest source code from DefiCh/app and extract them to your `/home/
 - [Source code (tar.gz)](https://github.com/DeFiCh/app/releases)
 
 
-## Build app-2.x.x
+## Build app-3.x.x
 
 ### Install dependencies for sandbox
 AppImages based on Electron require the kernel to be configured in a certain way to allow for its sandboxing to work as intended. Many distributions come with this configured out of the box, but not Raspberry OS. Specially the new Raspberry OS Bullseye does not allow to run appimages. This issue is fixed by installing:
@@ -42,7 +42,7 @@ sudo npm update npm
 ```
 
 ### Setup the required binary
-Copy respective replace the [files](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/tree/main/files) into `home/pi/app-2.x.x` (replace "x" by actual version):
+Copy respective replace the [files](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/tree/main/files) into `home/pi/app-3.x.x` (replace "x" by actual version):
 ```
 pre-build-armv7l.sh
 pre-build-arm64.sh
@@ -52,9 +52,9 @@ package.json
 
 
 ### To build the app using arm platform
-Change to your app directory `cd /home/pi/app-2.x.x` and initiate the sricpt to perform by:
+Change to your app directory `cd /home/pi/app-3.x.x` and initiate the sricpt to perform by:
 ```
-npm run init
+npm run init --legacy-peer-deps
 ```
 
 > **NOTE**: Warnings occures! The Raspberry OS 32-Bit works, the 64-Bit version too - when they run through... To be honest, the longer the more problems I have to compile the Defi-Wallet. Outdated node modules make me despair in the 64-bit version. If `npm run init` doesn't work you can use `npm run init --legacy-peer-deps` or `npm run init --force`. Anyway I recommend `npm cache clean --force` for every new run...
