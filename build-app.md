@@ -2,7 +2,7 @@
 
 
 ## Documentation
-- DefiCh/app (https://github.com/DeFiCh/app)
+- DefiCh/app (https://github.com/WavesHQ/app)
 - DefiCh/jellyfish (https://github.com/DeFiCh/jellyfish)
 - Nodejs (https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 - Workspaces (https://docs.npmjs.com/cli/v7/using-npm/workspaces)
@@ -14,7 +14,7 @@
 
 ## Source Code
 Download the latest source code from DefiCh/app and extract them to your `/home/user/` directory (eg. /home/pi/):
-- [Source code (tar.gz)](https://github.com/DeFiCh/app/releases)
+- [Source code (tar.gz)](https://github.com/WavesHQ/app/releases)
 
 
 ## Build app-3.x.x
@@ -28,7 +28,7 @@ sudo apt-get install flatpak
 ### Install dependencies for node
 Once installed, the node and npm commands are available for use and will remain updated for the channel you selected:
 ```
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y nodejs
 ```
