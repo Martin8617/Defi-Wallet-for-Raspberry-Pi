@@ -1,6 +1,6 @@
 {
   "name": "defi-wallet",
-  "version": "3.1.0",
+  "version": "3.2.9",
   "description": "DeFi Wallet",
   "main": "./electron-app/build/electron-app/index.js",
   "author": {
@@ -8,10 +8,10 @@
     "email": "engineering@defichain.com",
     "url": "https://defichain.com/"
   },
-  "homepage": "https://github.com/DeFiCh/app",
+  "homepage": "https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi",
   "publicPath": "./",
   "config": {
-    "ainVersion": "3.1.1"
+    "ainVersion": "3.2.7"
   },
   "scripts": {
     "init": "npm ci --force && cd webapp && npm run init",
@@ -29,10 +29,10 @@
     "pre:build:linux": "node ./scripts/prebuild linux",
     "pre:build:mac": "node ./scripts/prebuild mac",
     "pre:build:win": "node ./scripts/prebuild win",
-    "pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
-    "pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
-    "build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --armv7l --linux -p never",
-    "build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --arm64 --linux -p never",
+	"pre:build:armv7l": "sh pre-build-armv7l.sh $npm_package_config_ainVersion",
+	"pre:build:arm64": "sh pre-build-arm64.sh $npm_package_config_ainVersion",
+	"build:armv7l": "npm run pre:build:armv7l && npm run build:electron && electron-builder --linux --armv7l -p never",
+	"build:arm64": "npm run pre:build:arm64 && npm run build:electron && electron-builder --linux --arm64 -p never",    
     "build:electron": "npm run build:react && npm run transpile:prod && npm run set_env:prod",
     "build": "npm run build:electron && electron-builder",
     "build:all": "npm run build:electron && electron-builder -mwl",
@@ -116,7 +116,7 @@
     "typescript": "^4.6.3"
   },
   "build": {
-    "productName": "DeFi Wallet",
+    "productName": "DeFi-Wallet",
     "appId": "com.defichain.DeFiWallet",
     "copyright": "Copyright © 2020-2022 ${author}",
     "asar": true,
@@ -126,19 +126,25 @@
       {
         "from": "./webapp/build/release/",
         "to": "./webapp",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       }
     ],
     "extraResources": [
       {
         "from": "./bin",
         "to": "./bin",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       {
         "from": "./DO_NOT_SAVE_WALLETS_HERE",
         "to": "../DO_NOT_SAVE_WALLETS_HERE",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       }
     ],
     "icon": "electron-app/assets/icon/icon-512.png",
@@ -160,14 +166,18 @@
     },
     "linux": {
       "icon": "electron-app/assets/icon/linux/512x512.png",
-      "target": ["AppImage"]
+      "target": [
+        "AppImage"
+      ]
     },
     "win": {
       "target": "NSIS"
     },
     "mac": {
       "category": "public.app-category.finance",
-      "target": ["dmg"],
+      "target": [
+        "dmg"
+      ],
       "type": "distribution",
       "hardenedRuntime": true,
       "entitlements": "electron-app/assets/entitlements.mac.plist",
@@ -180,8 +190,8 @@
     },
     "publish": {
       "provider": "github",
-      "repo": "app",
-      "owner": "DeFiCh",
+      "repo": "Defi-Wallet-for-Raspberry-Pi",
+      "owner": "Martin8617",
       "releaseType": "prerelease"
     }
   },
