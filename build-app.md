@@ -36,7 +36,7 @@ Check if dependencies are installed as requested by nodejs installation:
 ```
 sudo apt-get install gcc g++ make
 ```
-You need `node v16`, and `npm v8` for this project, it's required to set up the npm workspaces. So you have to upgrade npm:
+You need `node v19`, and `npm v8` for this project, it's required to set up the npm workspaces. So you have to upgrade npm:
 ```
 sudo npm update npm
 ```
