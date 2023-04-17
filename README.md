@@ -2,7 +2,7 @@
 
 The official DeFiChain AppImage release of the Defi Wallet for Linux will not work for the Raspberrys. So I have made for myself a compiled version of the Defi Wallet for my Raspberry Pi 4B 4GB with official Raspberry Pi OS (32-Bit). This so called `armv7l` version is different to other Linux `x86_64` distributions as well as different to the Raspberry Pi 64-Bit version `arm8` respective `arm64`. 
 
-The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. No code was modyfied and was ~100% taken from the DeFiChain repository - ok, the npm workspace file package.json includes now the build for the arm-processors😏
+The compiled Raspberry Pi AppImage bases on the DeFiChain original source code. No code was modyfied and was ~100% taken from the DeFiChain repository - ok, the npm workspace file package.json includes now the build for the arm-processors😉
   
 > Note: I compiled the node and wallet on my Raspberry Pi with Raspberry OS bullseye (Debian v11). I got the feedback that you therefore have to upgrade your Raspberry to the same version as mine.  
 
@@ -19,22 +19,19 @@ Use DeFi Wallet to interact with DeFiChain. It is a wallet for \$DFI, wrapped BT
 
 ![Defi-Wallet-02](https://user-images.githubusercontent.com/79512509/179745384-211f408b-8476-4254-bb34-2798e49ec7d7.png)
 
-There are actually 3 different ways `(i./ii./iii.)` to set up a Defi Wallet (Desktop App including DeFi Node), however don't mix up! You have to decide for one of the different ways. Because you are here, I guess you have decided to use my AppImage😉:
+There are actually 2 different ways `(i. or ii.)` to set up a Defi Wallet (Desktop App including DeFi Node), however don't mix up! You have to decide for one of the different ways. Because you are here, I guess you have decided to use my AppImage😉:
+
 - Setup the Raspberry Pi with the offical [Raspberry Pi OS](https://www.raspberrypi.org/software/). Next you have to install the Defi Wallet on your Raspberry Pi:
-  1) Using the AppImage from [here (from this page)](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases). 
+  1) Using the AppImage from [here (from the release page)](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases). 
   2) Using the Script from [DefiNode](https://github.com/DefiNode/DeFiNode/blob/main/README.md#download-script-and-execution). Follow the steps as descripted and build your own Defi Wallet.
   
-- Setup the Raspberry Pi with the DeFi-Node-Raspi-Image:
-  
-  3) Using the Raspberry Pi Image provided on [Google Drive](https://drive.google.com/drive/folders/1yGWeP8gqt5JNypeeJTZ-0aqh-k04m7Jj?usp=sharing) with the [RaspberryPI Imager](https://www.raspberrypi.org/software/). 
-
 
 ## Howto Start
 
 - You [download the desktop app](https://github.com/Martin8617/Defi-Wallet-for-Raspberry-Pi/releases) for your Raspberry Pi.
 - You can check for official DeFiChain [releases](https://github.com/DeFiCh/app/releases) for latest downloadable installers for Windows, Mac and Linux, however they have no release for the Raspberry - that's why you are here.
 
-After download the AppImage, save the file where you want (e.g. /home/user/desktop/), mark the file as executable (right-klick the icon, choose preferences) and run the AppImage - that's all..., wait one new thing you have to consider:
+After download the AppImage, save the file where you want (e.g. /home/user/desktop/), mark the file as executable (right-klick the icon, choose preferences and mark as executable) and run the AppImage - that's all..., wait one new thing you have to consider:
 
 ### Install dependencies for sandbox
 AppImages based on Electron require the kernel to be configured in a certain way to allow for its sandboxing to work as intended. Many distributions come with this configured out of the box, but not Raspberry OS. Specially the new Raspberry OS Bullseye does not allow to run appimages. This issue is fixed by installing:
